@@ -4,8 +4,9 @@
   "description": "Servidor para o sistema de pedidos de café",
   "main": "server.js",
   "scripts": {
-    "start": "./node_modules/.bin/nodemon ./node_modules/ts-node server.js",
-    "test": "./node_modules/.bin/mocha -r ./node_modules/ts-node/register test/**/*.test.ts"
+    "start": "NODE_PATH=./src ./node_modules/.bin/nodemon ./node_modules/ts-node server.js",
+    "test": "NODE_PATH=./src ./node_modules/.bin/mocha -r ./node_modules/ts-node/register --project . test/**/*.test.ts --reporter list",
+    "build": "npm run test && ./node_modules/.bin/tsc"
   },
   "repository": {
     "type": "git",

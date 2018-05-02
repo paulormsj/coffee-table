@@ -1,9 +1,8 @@
-import {Router} from 'express';
-import {router as coffeeRouter} from './coffee/index';
+import {router as coffeeRouter} from './coffee';
+import Router from 'koa-router';
 
 
-const mRouter: Router = Router();
-mRouter.use('/coffee', coffeeRouter);
-
-export const router = mRouter;
-
+export const mainRoute = new Router();
+const subroutes = new Router();
+subroutes.use('/coffee', coffeeRouter.routes());
+mainRoute.use('/api', subroutes.routes());

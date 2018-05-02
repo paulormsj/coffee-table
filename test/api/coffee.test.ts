@@ -5,34 +5,36 @@ import {Coffee} from '../../src/model/coffee';
 import {CoffeeService} from '../../src/service/coffee.service';
 import {containerBuilder} from './container.test';
 
-const awilixExpress = require('awilix-express');
+const awilixKoa = require('awilix-koa');
 const MemoryCoffeeStore = require('../../src/dao/memoryCoffeeStore');
 
 describe('Coffee API Testing', () => {
    const url = 'http://localhost:3000/api/coffee';
    let server;
-
+   
    before((done) => {
       const coffee: Coffee = new Coffee({name: 'maratá'}).setId(1);
       const container = containerBuilder([CoffeeService, {name: 'coffeeStore', 'class': MemoryCoffeeStore}],
-                                         [],
-                                         {
-                                            'source': [coffee]
-                                         });
-      server = appBuilder({preRouteMiddlewares: [awilixExpress.scopePerRequest(container)]}).listen(3000, done);
-
+         [],
+         {
+            'source': [coffee]
+         });
+      server = appBuilder({preRouteMiddlewares: [require('koa-body')(), awilixKoa.scopePerRequest(container)]}).listen(
+         3000,
+         done);
+      
    });
-
+   
    it('should return the accepted values', (done) => {
       request(url, {headers: {'Accept': 'application/xml'}}, (err, res, body) => {
          expect(err).to.be.null;
          expect(body).to.be
-            .equal(`This resource can produce: application/json. Change the accept header accordingly`);
+                     .equal(`This resource can produce: application/json. Change the accept header accordingly`);
          done();
       });
    });
-
-
+   
+   
    it('should return the coffee list', (done) => {
       request.get(url, {
          headers: {
@@ -54,7 +56,7 @@ describe('Coffee API Testing', () => {
          done();
       });
    });
-
+   
    it('should save my coffee', (done) => {
       const coffee = {
          name: 'Pilão',
@@ -74,7 +76,7 @@ describe('Coffee API Testing', () => {
          done();
       });
    });
-
+   
    after((done) => {
       server.close(() => {
          done();

@@ -1,10 +1,15 @@
-import {appBuilder} from './app';
+import {appBuilder, AppConfig} from './app';
 
-const x = 1;
-const y = x + 1;
 
-appBuilder({}).listen(3000, () => {
-    console.log('listening');
+const preRouteMiddlewares = [
+   require('koa-body')()
+];
+
+const config: AppConfig = {
+   preRouteMiddlewares: preRouteMiddlewares
+};
+
+appBuilder(config).listen(3000, () => {
 });
 
 

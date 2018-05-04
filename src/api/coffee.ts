@@ -1,4 +1,4 @@
-import {Coffee} from 'model/coffee';
+import {coffeeMaker} from 'model/coffee';
 import {CoffeeService} from 'service/coffee.service';
 import {Context} from 'koa';
 import {consumes, produces} from 'support/middlewares';
@@ -18,8 +18,7 @@ class CoffeeApi {
    }
    
    saveCoffee(ctx: Context) {
-      const coffee = (<any>ctx.request).body;
-      const result = this.coffeeService.saveCoffee(new Coffee(coffee));
+      const result = this.coffeeService.saveCoffee(coffeeMaker((<any>ctx.request).body));
       return ctx.body = result;
    }
 };

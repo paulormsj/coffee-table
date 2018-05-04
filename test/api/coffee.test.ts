@@ -1,20 +1,20 @@
 import {expect} from 'chai';
 import request from 'request';
 import {appBuilder} from '../../app';
-import {Coffee} from '../../src/model/coffee';
+import {Coffee, coffeeMaker} from '../../src/model/coffee';
 import {CoffeeService} from '../../src/service/coffee.service';
-import {containerBuilder} from './container.test';
+import {MemoryCoffeeStore} from '../../src/dao/memoryCoffeeStore';
+import {testContainerBuilder} from './container.test';
 
 const awilixKoa = require('awilix-koa');
-const MemoryCoffeeStore = require('../../src/dao/memoryCoffeeStore');
 
 describe('Coffee API Testing', () => {
    const url = 'http://localhost:3000/api/coffee';
    let server;
    
    before((done) => {
-      const coffee: Coffee = new Coffee({name: 'maratá'}).setId(1);
-      const container = containerBuilder([CoffeeService, {name: 'coffeeStore', 'class': MemoryCoffeeStore}],
+      const coffee: Coffee = coffeeMaker({name: 'maratá', id: 1});
+      const container = testContainerBuilder([CoffeeService, {name: 'coffeeStore', 'class': MemoryCoffeeStore}],
          [],
          {
             'source': [coffee]
@@ -43,16 +43,12 @@ describe('Coffee API Testing', () => {
       }, (err, res, body) => {
          expect(err).to.be.null;
          const coffees: Coffee[] = JSON.parse(body);
-         expect(coffees)
+         expect(coffees[0])
             .to
-            .be
-            .deep
-            .equal([{
+            .contain({
                name: 'maratá',
-               price: null,
-               description: null,
                id: 1
-            }]);
+            });
          done();
       });
    });
@@ -72,7 +68,7 @@ describe('Coffee API Testing', () => {
          expect(err).to.be.null;
          const saved = JSON.parse(body);
          expect(saved).to.have.property('id', 2);
-         expect(saved).to.be.include(coffee);
+         expect(saved).to.include(coffee);
          done();
       });
    });

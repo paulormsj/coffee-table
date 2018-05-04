@@ -28,14 +28,16 @@
     "koa": "^2.5.1",
     "koa-body": "^2.5.0",
     "koa-router": "^7.4.0",
-    "lodash": "^4.17.5",
+    "lodash": "^4.17.10",
+    "mongoose": "^5.0.17",
     "npm": "^5.6.0"
   },
   "devDependencies": {
     "@types/chai": "^4.1.2",
     "@types/koa-router": "^7.0.28",
-    "@types/lodash": "^4.14.102",
+    "@types/lodash": "^4.14.108",
     "@types/mocha": "^5.2.0",
+    "@types/mongoose": "^5.0.11",
     "@types/request": "^2.47.0",
     "awilix-koa": "^2.1.1",
     "chai": "^4.1.2",

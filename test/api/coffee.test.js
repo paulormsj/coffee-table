@@ -1,7 +1,7 @@
 import {expect} from 'chai';
 import request from 'request';
 import {appBuilder} from '../../app';
-import {Coffee, coffeeMaker} from '../../src/model/coffee';
+import {coffeeMaker} from '../../src/model/coffee';
 import {CoffeeService} from '../../src/service/coffee.service';
 import {MemoryCoffeeStore} from '../../src/dao/memoryCoffeeStore';
 import {testContainerBuilder} from './container.test';
@@ -13,15 +13,16 @@ describe('Coffee API Testing', () => {
    let server;
    
    before((done) => {
-      const coffee: Coffee = coffeeMaker({name: 'maratá', id: 1});
+      const coffee = coffeeMaker({name: 'maratá', id: 1});
       const container = testContainerBuilder([CoffeeService, {name: 'coffeeStore', 'class': MemoryCoffeeStore}],
          [],
          {
             'source': [coffee]
          });
-      server = appBuilder({preRouteMiddlewares: [require('koa-body')(), awilixKoa.scopePerRequest(container)]}).listen(
-         3000,
-         done);
+      server = appBuilder({preRouteMiddlewares: [require('koa-body')(), awilixKoa.scopePerRequest(container)]})
+         .listen(
+            3000,
+            done);
       
    });
    
@@ -42,12 +43,11 @@ describe('Coffee API Testing', () => {
          }
       }, (err, res, body) => {
          expect(err).to.be.null;
-         const coffees: Coffee[] = JSON.parse(body);
+         const coffees = JSON.parse(body);
          expect(coffees[0])
             .to
             .contain({
-               name: 'maratá',
-               id: 1
+               name: 'maratá'
             });
          done();
       });
@@ -67,7 +67,6 @@ describe('Coffee API Testing', () => {
       }, (err, res, body) => {
          expect(err).to.be.null;
          const saved = JSON.parse(body);
-         expect(saved).to.have.property('id', 2);
          expect(saved).to.include(coffee);
          done();
       });

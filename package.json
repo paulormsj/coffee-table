@@ -4,8 +4,8 @@
   "description": "Servidor para o sistema de pedidos de café",
   "main": "server.js",
   "scripts": {
-    "start": "NODE_PATH=./src ./node_modules/.bin/nodemon ./node_modules/ts-node server.js",
-    "test": "NODE_PATH=./src ./node_modules/.bin/mocha -r ./node_modules/ts-node/register --project . test/**/*.test.ts --reporter list",
+    "start": "./node_modules/.bin/nodemon bootstrap.js",
+    "test": "./node_modules/.bin/mocha --reporter list --require babel-core/register test/**/*.test.js ",
     "build": "npm run test && ./node_modules/.bin/tsc"
   },
   "repository": {
@@ -40,6 +40,8 @@
     "@types/mongoose": "^5.0.11",
     "@types/request": "^2.47.0",
     "awilix-koa": "^2.1.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
     "chai": "^4.1.2",
     "mocha": "^5.0.0",
     "nodemon": "^1.12.1",

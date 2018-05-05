@@ -1,4 +1,4 @@
-import {mainRoute} from './src/api/routes';
+import {mainRoute} from './src/api/routes.api';
 import * as _ from 'lodash';
 
 const Koa = require('koa');

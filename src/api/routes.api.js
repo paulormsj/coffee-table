@@ -1,4 +1,4 @@
-import {router as coffeeRouter} from './coffee';
+import {router as coffeeRouter} from './coffee.api';
 import Router from 'koa-router';
 
 

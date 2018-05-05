@@ -19,7 +19,7 @@ const coffeeSchema = new mongoose.Schema({
 });
 
 
-const CoffeeDocument = mongoose.model('Coffee', coffeeSchema, 'coffees');
+export const CoffeeDocument = mongoose.model('Coffee', coffeeSchema, 'coffees');
 
 export function coffeeMaker(flavor) {
    if ( _.isNil(flavor) || _.isNil(flavor.name) ) {

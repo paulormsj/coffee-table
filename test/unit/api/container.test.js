@@ -7,10 +7,7 @@ export function testContainerBuilder(classes, functions, values) {
    if ( classes ) {
       classes.forEach(c => {
          if ( typeof(c) === 'object' ) {
-            container.register(c.name, asClass(c.class));
-         }
-         else {
-            container.register(_.camelCase(c.name), asClass(c));
+            container.register(c.name, asClass(c.clazz));
          }
       });
    }

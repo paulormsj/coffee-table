@@ -1,6 +1,6 @@
 import {expect} from 'chai';
 
-import {coffeeMaker} from '../../src/model/coffee';
+import {coffeeMaker} from '../../../src/model/coffee';
 
 describe('Trying different coffees', () => {
    it('should throw an error without name', () => {

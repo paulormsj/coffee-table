@@ -1,9 +1,9 @@
 import {expect} from 'chai';
 import request from 'request';
-import {appBuilder} from '../../app';
-import {coffeeMaker} from '../../src/model/coffee';
-import {CoffeeService} from '../../src/service/coffee.service';
-import {MemoryCoffeeStore} from '../../src/dao/memoryCoffeeStore';
+import {appBuilder} from '../../../app';
+import {coffeeMaker} from '../../../src/model/coffee';
+import {CoffeeService} from '../../../src/service/coffee.service';
+import {MockCoffeeStore} from '../mocks/mock-coffee.store';
 import {testContainerBuilder} from './container.test';
 
 const awilixKoa = require('awilix-koa');
@@ -14,7 +14,8 @@ describe('Coffee API Testing', () => {
    
    before((done) => {
       const coffee = coffeeMaker({name: 'maratá', id: 1});
-      const container = testContainerBuilder([CoffeeService, {name: 'coffeeStore', 'class': MemoryCoffeeStore}],
+      const container = testContainerBuilder([{name: 'coffeeService', clazz: CoffeeService},
+            {name: 'coffeeStore', clazz: MockCoffeeStore}],
          [],
          {
             'source': [coffee]

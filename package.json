@@ -5,8 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "./node_modules/.bin/nodemon bootstrap.js",
-    "test": "./node_modules/.bin/mocha --reporter list --require babel-core/register test/**/*.test.js ",
-    "build": "npm run test && ./node_modules/.bin/tsc"
+    "test": "./node_modules/.bin/mocha --reporter list --require babel-register test/**/*.test.js "
   },
   "repository": {
     "type": "git",
@@ -15,7 +14,7 @@
   "keywords": [
     "Coffee"
   ],
-  "author": "paulo.junior <paulo.junior@solutis.com.br>",
+  "author": "paulo.junior <paulormsj@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/paulormsj/coffee-table/issues"

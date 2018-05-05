@@ -1,27 +1,25 @@
-import {DataStore} from './dataStore';
+import {DataStore} from '../../../src/dao/data.store';
 import {Types} from 'mongoose';
 
-const _ = require('lodash');
-const assert = require('assert');
 
-export class MemoryCoffeeStore extends DataStore {
+export class MockCoffeeStore extends DataStore {
    constructor({source}) {
       super();
-      this.coffees = source || [];
+      this.coffees = source;
    }
    
    all() {
-      return new Array(...this.coffees);
+      return Promise.resolve([...this.coffees]);
    }
    
    byId(id) {
-      return this.coffees.filter(c => c._id === id)[0];
+      return Promise.resolve(this.coffees.filter(c => c._id === id)[0]);
    }
    
    save(coffee) {
       coffee._id = new Types.ObjectId;
       this.coffees.push(coffee);
-      return coffee;
+      return Promise.resolve(coffee);
    }
    
    update(coffee) {
@@ -30,12 +28,11 @@ export class MemoryCoffeeStore extends DataStore {
             Object.assign(c, coffee);
          }
       });
-      return coffee;
+      return Promise.resolve(coffee);
    }
    
    remove(id) {
       this.coffees = this.coffees.filter(c => c._id !== id);
-      return true;
+      return Promise.resolve(true);
    }
 }
-

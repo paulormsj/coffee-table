@@ -1,5 +1,5 @@
 import {coffeeMaker} from '../model/coffee';
-import {consumes, produces} from '../support/utils.middleware';
+import {consumes, produces} from '../support/middleware/utils.middleware';
 import {makeClassInvoker} from 'awilix-koa';
 
 export const router = require('koa-router')();

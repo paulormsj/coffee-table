@@ -1,8 +1,6 @@
 import {DataStore} from '../../../src/dao/data.store';
 import {Types} from 'mongoose';
 
-AKOA4VAJ5AIFmloN;
-
 export class MockCoffeeStore extends DataStore {
    constructor({source}) {
       super();

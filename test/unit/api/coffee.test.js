@@ -12,13 +12,18 @@ describe('Coffee API Testing', () => {
    const url = 'http://localhost:3000/api/coffee';
    let server;
    
+   const classes = [{name: 'coffeeService', clazz: CoffeeService}, {name: 'coffeeStore', clazz: MockCoffeeStore}];
+   const appConfig = {
+      log: {level: 'nothing'},
+      production: false
+   };
+   
    before((done) => {
       const coffee = coffeeMaker({name: 'maratá', id: 1});
-      const container = testContainerBuilder([{name: 'coffeeService', clazz: CoffeeService},
-            {name: 'coffeeStore', clazz: MockCoffeeStore}],
-         [],
+      const container = testContainerBuilder(classes, [],
          {
-            'source': [coffee]
+            'source': [coffee],
+            'appConfig': appConfig
          });
       server = appBuilder({preRouteMiddlewares: [require('koa-body')(), awilixKoa.scopePerRequest(container)]})
          .listen(

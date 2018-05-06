@@ -8,8 +8,8 @@ const standard = {
    ]
 };
 
-export function loggerBuilder({level, isSimple, tag}) {
-   let format = isSimple ? combine(timestamp(), json()) : combine(colorize(), timestamp(), simple());
+export function loggerBuilder({level, inProduction, tag}) {
+   let format = inProduction ? combine(timestamp(), json()) : combine(colorize(), timestamp(), simple());
    format = tag ? combine(label({tag: tag}), format) : format;
    return winston.createLogger(Object.assign(standard, {
       level: level,

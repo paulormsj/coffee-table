@@ -1,17 +1,21 @@
 import {loggerBuilder} from '../log/log.util';
+import {asValue} from 'awilix';
 
-const production = process.env.NODE_ENV === 'production';
-const level = production ? 'info' : 'debug';
-
-export async function log({tag}){
+export function log({tag}) {
    return async (ctx, next) => {
-      ctx.logger = loggerBuilder({level, production, tag});
-      next();
-   }
+      const configuration = ctx.state.container.resolve('appConfig');
+      ctx.state.container.register('logger', asValue(loggerBuilder({
+         level: configuration.log.level, inProduction: configuration.production, tag
+      })));
+      await next();
+   };
 }
 
-export async function audit(ctx, next) {
-   ctx.logger && ctx.logger.info(`receiving request on ${ctx.request.url}`);
-   next();
+export function audit() {
+   return async (ctx, next) => {
+      const logger = ctx.state.container.resolve('logger');
+      logger && logger.info(`receiving request on ${ctx.request.url}`);
+      await next();
+   };
 }
 

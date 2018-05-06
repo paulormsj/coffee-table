@@ -11,7 +11,7 @@ export function consumes(contentType) {
 export function produces(...acceptList) {
    return async (ctx, next) => {
       if ( ctx.accepts(acceptList) ) {
-        await  next();
+         await  next();
       } else {
          ctx.throw(406, `This resource can produce: ${acceptList}. Change the accept header accordingly`);
       }

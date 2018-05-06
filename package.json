@@ -4,7 +4,7 @@
   "description": "Servidor para o sistema de pedidos de café",
   "main": "server.js",
   "scripts": {
-    "start": "./node_modules/.bin/nodemon bootstrap.js",
+    "start": "CONF_FILE_PATH=./config.json ./node_modules/.bin/nodemon bootstrap.js",
     "test": "./node_modules/.bin/mocha --reporter list --require babel-register test/**/*.test.js "
   },
   "repository": {

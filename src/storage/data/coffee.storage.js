@@ -1,8 +1,8 @@
-import {DataStore} from './data.store';
-import {CoffeeDocument} from '../model/coffee';
+import {DataStorage} from './data.storage';
+import {CoffeeDocument} from '../../model/coffee';
 
 
-export class CoffeeStore extends DataStore {
+export class CoffeeStorage extends DataStorage {
    
    all(query) {
       return CoffeeDocument.find(query || {}).then();

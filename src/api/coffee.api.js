@@ -1,5 +1,5 @@
 import {coffeeMaker} from '../model/coffee';
-import {consumes, produces} from '../support/middleware/utils.middleware';
+import {consumes, produces, storageAvailable} from '../support/middleware/utils.middleware';
 import {makeClassInvoker} from 'awilix-koa';
 
 export const router = require('koa-router')();
@@ -22,6 +22,8 @@ class CoffeeApi {
 
 const apiInvoker = makeClassInvoker(CoffeeApi);
 
+
+// router.use(storageAvailable());
 
 router.get('/', produces('application/json'), apiInvoker('getCoffees'));
 router.post('/', consumes('application/json'), apiInvoker('saveCoffee'));

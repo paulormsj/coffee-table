@@ -1,15 +1,16 @@
 import {expect} from 'chai';
-import request from 'request';
 import {appBuilder} from '../../../app';
 import {coffeeMaker} from '../../../src/model/coffee';
 import {CoffeeService} from '../../../src/service/coffee.service';
 import {MockCoffeeStore} from '../mocks/mock-coffee.store';
-import {testContainerBuilder} from './container.test';
+import {testContainerBuilder} from '../../shared/container';
+
+const axios = require('axios');
 
 const awilixKoa = require('awilix-koa');
 
 describe('Coffee API Testing', () => {
-   const url = 'http://localhost:3000/api/coffee';
+   const url = 'http://localhost:3000/api';
    let server;
    
    const classes = [{name: 'coffeeService', clazz: CoffeeService}, {name: 'coffeeStore', clazz: MockCoffeeStore}];
@@ -18,45 +19,50 @@ describe('Coffee API Testing', () => {
       production: false
    };
    
+   let axiosInstance;
+   
    before((done) => {
       const coffee = coffeeMaker({name: 'maratá', id: 1});
       const container = testContainerBuilder(classes, [],
          {
             'source': [coffee],
-            'appConfig': appConfig
+            'appConfig': appConfig,
+            'appStorage': {isAvailable: () => true}
          });
       server = appBuilder({preRouteMiddlewares: [require('koa-body')(), awilixKoa.scopePerRequest(container)]})
          .listen(
             3000,
             done);
       
+      axiosInstance = axios.default.create({
+         baseURL: url
+      });
+      
    });
    
    it('should return the accepted values', (done) => {
-      request(url, {headers: {'Accept': 'application/xml'}}, (err, res, body) => {
-         expect(err).to.be.null;
-         expect(body).to.be
-                     .equal(`This resource can produce: application/json. Change the accept header accordingly`);
+      axiosInstance.get('/coffee', {headers: {'Accept': 'application/xml'}}).then().catch(error => {
+         expect(error.response.data).to.be
+                                    .equal(`This resource can produce: application/json. Change the accept header accordingly`);
          done();
       });
    });
    
    
    it('should return the coffee list', (done) => {
-      request.get(url, {
+      axiosInstance.get('/coffee', {
          headers: {
             'Accept': 'application/json'
          }
-      }, (err, res, body) => {
-         expect(err).to.be.null;
-         const coffees = JSON.parse(body);
+      }).then(response => {
+         const coffees = response.data;
          expect(coffees[0])
             .to
             .contain({
                name: 'maratá'
             });
          done();
-      });
+      }).catch(done);
    });
    
    it('should save my coffee', (done) => {
@@ -65,17 +71,15 @@ describe('Coffee API Testing', () => {
          price: 5.95,
          description: 'O café número 1'
       };
-      request.post(url, {
+      axiosInstance.post('/coffee', JSON.stringify(coffee), {
          headers: {
             'Content-type': 'application/json'
-         },
-         body: JSON.stringify(coffee)
-      }, (err, res, body) => {
-         expect(err).to.be.null;
-         const saved = JSON.parse(body);
+         }
+      }).then(response => {
+         const saved = response.data;
          expect(saved).to.include(coffee);
          done();
-      });
+      }).catch(done);
    });
    
    after((done) => {

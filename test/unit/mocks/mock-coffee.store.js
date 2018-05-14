@@ -1,7 +1,7 @@
-import {DataStore} from '../../../src/dao/data.store';
+import {DataStorage} from '../../../src/storage/data/data.storage';
 import {Types} from 'mongoose';
 
-export class MockCoffeeStore extends DataStore {
+export class MockCoffeeStore extends DataStorage {
    constructor({source}) {
       super();
       this.coffees = source;

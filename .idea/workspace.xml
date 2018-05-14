@@ -2,11 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1189dfc9-e9c6-4fb3-aea9-f6471bcb2b20" name="Default" comment="kk">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/storage/data/data.storage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/storage/mongo.storage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/storage/storage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/integration/mongo/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/integration/mongo/coffee+mongoose.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/integration/mongo/init/coffee.init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/shared/mongo-environment.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/coffee.api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/coffee.api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/coffee.store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/storage/data/coffee.storage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/data.store.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/coffee.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/coffee.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/support/log/log.util.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/support/log/log.util.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/support/middleware/logger.middleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/support/middleware/logger.middleware.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/support/middleware/utils.middleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/support/middleware/utils.middleware.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/unit/api/coffee.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/unit/api/coffee.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/unit/api/container.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/shared/container.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/unit/mocks/mock-coffee.store.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/unit/mocks/mock-coffee.store.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,23 +33,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="container.test.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/unit/api/container.test.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-              <folding>
-                <element signature="e#0#69#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="coffee.test.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/unit/api/coffee.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="44" column="46" selection-start-line="44" selection-start-column="46" selection-end-line="44" selection-end-column="46" />
+            <state relative-caret-position="187">
+              <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -41,52 +45,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mock-coffee.store.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/unit/mocks/mock-coffee.store.js">
+      <file leaf-file-name="routes.api.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/api/routes.api.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-51">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="119">
+              <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
               <folding>
-                <element signature="e#0#54#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="log.util.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/support/log/log.util.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="41" selection-start-column="41" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="15" lean-forward="true" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/server.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="37" column="31" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
-              <folding>
-                <element signature="e#0#44#0" expanded="true" />
+                <element signature="e#0#52#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -95,8 +60,8 @@
       <file leaf-file-name="logger.middleware.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/support/middleware/logger.middleware.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+            <state relative-caret-position="102">
+              <caret line="6" column="57" selection-start-line="6" selection-start-column="57" selection-end-line="6" selection-end-column="57" />
               <folding>
                 <element signature="e#0#46#0" expanded="true" />
               </folding>
@@ -104,20 +69,68 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="utils.middleware.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/support/middleware/utils.middleware.js">
+      <file leaf-file-name="log.util.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/support/log/log.util.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="306">
+              <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config.json">
+      <file leaf-file-name="coffee+mongoose.test.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/integration/mongo/coffee+mongoose.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="65" selection-start-line="2" selection-start-column="65" selection-end-line="2" selection-end-column="65" />
+            <state relative-caret-position="222">
+              <caret line="78" column="56" selection-start-line="78" selection-start-column="56" selection-end-line="78" selection-end-column="56" />
+              <folding>
+                <element signature="e#0#66#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.d.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/@types/koa/index.d.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="432" selection-start-line="432" selection-end-line="432" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.d.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/@types/mongoose/index.d.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="218" column="47" selection-start-line="218" selection-start-column="47" selection-end-line="218" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="coffee.test.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/unit/model/coffee.test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.d.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/axios/index.d.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="181">
+              <caret line="50" column="17" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mongo-environment.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/shared/mongo-environment.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -137,7 +150,11 @@
       <find>chai.</find>
       <find>Router</find>
       <find>CoffeeApi</find>
+      <find>&quot;</find>
     </findStrings>
+    <replaceStrings>
+      <replace>'</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -145,20 +162,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/server.mjs" />
-        <option value="$PROJECT_DIR$/test/container.test.js" />
-        <option value="$PROJECT_DIR$/service/coffee.service.js" />
-        <option value="$PROJECT_DIR$/model/coffee.js" />
-        <option value="$PROJECT_DIR$/src/api/coffee/index.js" />
-        <option value="$PROJECT_DIR$/test/model/coffee.test.js" />
-        <option value="$PROJECT_DIR$/src/middleware/middlewares.d.ts" />
-        <option value="$PROJECT_DIR$/src/middleware/consumes.ts" />
-        <option value="$PROJECT_DIR$/src/middleware/produces.ts" />
-        <option value="$PROJECT_DIR$/src/dao/dataStore.ts" />
-        <option value="$PROJECT_DIR$/src/service/coffee.service.ts" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/tsconfig.json" />
-        <option value="$PROJECT_DIR$/src/api/coffee/index.ts" />
         <option value="$PROJECT_DIR$/src/api/routes.ts" />
         <option value="$PROJECT_DIR$/app.ts" />
         <option value="$PROJECT_DIR$/server.ts" />
@@ -170,7 +173,6 @@
         <option value="$PROJECT_DIR$/src/model/coffee.ts" />
         <option value="$PROJECT_DIR$/test/model/coffee.test.ts" />
         <option value="$PROJECT_DIR$/test/api/container.test.ts" />
-        <option value="$PROJECT_DIR$/src/service/coffee.service.js" />
         <option value="$PROJECT_DIR$/src/support/middlewares.js" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/bootstrap.js" />
@@ -183,19 +185,34 @@
         <option value="$PROJECT_DIR$/src/api/coffee.js" />
         <option value="$PROJECT_DIR$/src/api/routes.js" />
         <option value="$PROJECT_DIR$/test/mocks/mock-coffee.store.js" />
-        <option value="$PROJECT_DIR$/src/api/coffee.api.js" />
         <option value="$PROJECT_DIR$/.babelrc" />
         <option value="$PROJECT_DIR$/test/unit/model/coffee.test.js" />
         <option value="$PROJECT_DIR$/src/support/logger.middleware.js" />
-        <option value="$PROJECT_DIR$/src/support/log/log.util.js" />
         <option value="$PROJECT_DIR$/test/unit/mocks/mock-coffee.store.js" />
-        <option value="$PROJECT_DIR$/src/api/routes.api.js" />
-        <option value="$PROJECT_DIR$/test/unit/api/coffee.test.js" />
-        <option value="$PROJECT_DIR$/src/support/middleware/logger.middleware.js" />
-        <option value="$PROJECT_DIR$/src/support/middleware/utils.middleware.js" />
         <option value="$PROJECT_DIR$/config.json" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/test/integration/coffee+mongoose.js" />
+        <option value="$PROJECT_DIR$/src/storage/coffee.storage.js" />
+        <option value="$PROJECT_DIR$/src/storage/data.storage.js" />
+        <option value="$PROJECT_DIR$/src/storage/storage.js" />
+        <option value="$PROJECT_DIR$/test/integration/mongo/coffee.init.json" />
+        <option value="$PROJECT_DIR$/test/integration/mongo/create_test_db.sh" />
+        <option value="$PROJECT_DIR$/test/integration/mongo/init/coffee.init.json" />
+        <option value="$PROJECT_DIR$/test/integration/mongo/coffee+mongoose.js" />
+        <option value="$PROJECT_DIR$/test/integration/mongo/Dockerfile" />
+        <option value="$PROJECT_DIR$/src/support/middleware/utils.middleware.js" />
+        <option value="$PROJECT_DIR$/src/service/coffee.service.js" />
+        <option value="$PROJECT_DIR$/src/api/coffee.api.js" />
+        <option value="$PROJECT_DIR$/src/api/routes.api.js" />
+        <option value="$PROJECT_DIR$/src/storage/mongo.storage.js" />
+        <option value="$PROJECT_DIR$/test/shared/mongoose.js" />
+        <option value="$PROJECT_DIR$/test/shared/mongo-connection.js" />
+        <option value="$PROJECT_DIR$/test/unit/api/coffee.test.js" />
+        <option value="$PROJECT_DIR$/src/support/middleware/logger.middleware.js" />
+        <option value="$PROJECT_DIR$/src/support/log/log.util.js" />
+        <option value="$PROJECT_DIR$/test/shared/mongo-environment.js" />
+        <option value="$PROJECT_DIR$/test/integration/mongo/coffee+mongoose.test.js" />
       </list>
     </option>
   </component>
@@ -225,9 +242,9 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="27" />
+    <option name="y" value="25" />
     <option name="width" value="1920" />
-    <option name="height" value="1053" />
+    <option name="height" value="1055" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -680,7 +697,218 @@
             <path>
               <item name="coffee-table" type="b2602c69:ProjectViewProjectNode" />
               <item name="coffee-table" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="coffee-table" type="b2602c69:ProjectViewProjectNode" />
+              <item name="coffee-table" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="@types" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="coffee-table" type="b2602c69:ProjectViewProjectNode" />
+              <item name="coffee-table" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="@types" type="462c0819:PsiDirectoryNode" />
+              <item name="koa" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="coffee-table" type="b2602c69:ProjectViewProjectNode" />
+              <item name="coffee-table" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="@types" type="462c0819:PsiDirectoryNode" />
+              <item name="mongoose" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="coffee-table" type="b2602c69:ProjectViewProjectNode" />
+              <item name="coffee-table" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="@types" type="462c0819:PsiDirectoryNode" />
+              <item name="node" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="coffee-table" type="b2602c69:ProjectViewProjectNode" />
+              <item name="coffee-table" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="@types" type="462c0819:PsiDirectoryNode" />
+              <item name="request" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="coffee-table" type="b2602c69:ProjectViewProjectNode" />
+              <item name="coffee-table" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="awilix" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="coffee-table" type="b2602c69:ProjectViewProjectNode" />
+              <item name="coffee-table" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="awilix" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="coffee-table" type="b2602c69:ProjectViewProjectNode" />
+              <item name="coffee-table" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="awilix" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="awilix.js" type="620a8d5e:NestingTreeNode" />
+            </path>
+            <path>
+              <item name="coffee-table" type="b2602c69:ProjectViewProjectNode" />
+              <item name="coffee-table" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="axios" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="coffee-table" type="b2602c69:ProjectViewProjectNode" />
+              <item name="coffee-table" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="logform" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="coffee-table" type="b2602c69:ProjectViewProjectNode" />
+              <item name="coffee-table" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="mongoose" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="coffee-table" type="b2602c69:ProjectViewProjectNode" />
+              <item name="coffee-table" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="mongoose" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="coffee-table" type="b2602c69:ProjectViewProjectNode" />
+              <item name="coffee-table" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="winston" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="coffee-table" type="b2602c69:ProjectViewProjectNode" />
+              <item name="coffee-table" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="winston" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="coffee-table" type="b2602c69:ProjectViewProjectNode" />
+              <item name="coffee-table" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="winston" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="winston" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="coffee-table" type="b2602c69:ProjectViewProjectNode" />
+              <item name="coffee-table" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="winston" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="winston" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="coffee-table" type="b2602c69:ProjectViewProjectNode" />
+              <item name="coffee-table" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="coffee-table" type="b2602c69:ProjectViewProjectNode" />
+              <item name="coffee-table" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="coffee-table" type="b2602c69:ProjectViewProjectNode" />
+              <item name="coffee-table" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="coffee-table" type="b2602c69:ProjectViewProjectNode" />
+              <item name="coffee-table" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="coffee-table" type="b2602c69:ProjectViewProjectNode" />
+              <item name="coffee-table" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="coffee-table" type="b2602c69:ProjectViewProjectNode" />
+              <item name="coffee-table" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="support" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="coffee-table" type="b2602c69:ProjectViewProjectNode" />
+              <item name="coffee-table" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="support" type="462c0819:PsiDirectoryNode" />
+              <item name="log" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="coffee-table" type="b2602c69:ProjectViewProjectNode" />
+              <item name="coffee-table" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="support" type="462c0819:PsiDirectoryNode" />
+              <item name="middleware" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="coffee-table" type="b2602c69:ProjectViewProjectNode" />
+              <item name="coffee-table" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="coffee-table" type="b2602c69:ProjectViewProjectNode" />
+              <item name="coffee-table" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="integration" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="coffee-table" type="b2602c69:ProjectViewProjectNode" />
+              <item name="coffee-table" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="integration" type="462c0819:PsiDirectoryNode" />
+              <item name="mongo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="coffee-table" type="b2602c69:ProjectViewProjectNode" />
+              <item name="coffee-table" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="shared" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="coffee-table" type="b2602c69:ProjectViewProjectNode" />
+              <item name="coffee-table" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="unit" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="coffee-table" type="b2602c69:ProjectViewProjectNode" />
+              <item name="coffee-table" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="unit" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="coffee-table" type="b2602c69:ProjectViewProjectNode" />
+              <item name="coffee-table" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="unit" type="462c0819:PsiDirectoryNode" />
+              <item name="mocks" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="coffee-table" type="b2602c69:ProjectViewProjectNode" />
+              <item name="coffee-table" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="unit" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -705,16 +933,16 @@
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs.mocha.mocha_node_package_dir" value="$PROJECT_DIR$/node_modules/mocha" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test/integration/mongo/init" />
+      <recent name="$PROJECT_DIR$/test/integration/mongo" />
+      <recent name="$PROJECT_DIR$/src/storage/data" />
+      <recent name="$PROJECT_DIR$/test/shared" />
       <recent name="$PROJECT_DIR$/src/support/middleware" />
-      <recent name="$PROJECT_DIR$/test/unit" />
-      <recent name="$PROJECT_DIR$/src/api" />
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/test/api" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -729,7 +957,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.TestNode.js">
+  <component name="RunManager" selected="Mocha.Test">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
@@ -794,15 +1022,90 @@
     </configuration>
     <configuration name="TestNode.js" type="js.build_tools.npm" factoryName="npm">
       <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="test" />
+      <command value="run" />
+      <scripts>
+        <script value="test" />
+      </scripts>
       <node-interpreter value="node" />
       <package-manager value="$PROJECT_DIR$/node_modules/npm" />
       <envs />
     </configuration>
+    <configuration name="Coffee  + Mongoose Testing" type="mocha-javascript-test-runner" factoryName="Mocha" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options>--require babel-register</extra-mocha-options>
+      <test-kind>SUITE</test-kind>
+      <test-file>$PROJECT_DIR$/test/integration/mongo/coffee+mongoose.test.js</test-file>
+      <test-names>
+        <name value="Coffee  + Mongoose Testing" />
+      </test-names>
+    </configuration>
+    <configuration name="Coffee API Testing" type="mocha-javascript-test-runner" factoryName="Mocha" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options>--trace-warnings</node-options>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options>--require babel-register</extra-mocha-options>
+      <test-kind>SUITE</test-kind>
+      <test-file>$PROJECT_DIR$/test/unit/api/coffee.test.js</test-file>
+      <test-names>
+        <name value="Coffee API Testing" />
+      </test-names>
+    </configuration>
+    <configuration name="Test" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options>--trace-warnings</node-options>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options>--require babel-register</extra-mocha-options>
+      <test-kind>PATTERN</test-kind>
+      <test-pattern>test/**/*.test.js</test-pattern>
+    </configuration>
+    <configuration name="Trying different coffees" type="mocha-javascript-test-runner" factoryName="Mocha" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options>--require babel-register</extra-mocha-options>
+      <test-kind>SUITE</test-kind>
+      <test-file>$PROJECT_DIR$/test/unit/model/coffee.test.js</test-file>
+      <test-names>
+        <name value="Trying different coffees" />
+      </test-names>
+    </configuration>
+    <configuration name="test/integration/mongo/coffee+mongoose.test.js" type="mocha-javascript-test-runner" factoryName="Mocha" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>TEST_FILE</test-kind>
+      <test-file>$PROJECT_DIR$/test/integration/mongo/coffee+mongoose.test.js</test-file>
+    </configuration>
     <list>
+      <item itemvalue="Mocha.Test" />
       <item itemvalue="npm.Node.js" />
       <item itemvalue="npm.TestNode.js" />
+      <item itemvalue="Mocha.Coffee  + Mongoose Testing" />
+      <item itemvalue="Mocha.Trying different coffees" />
+      <item itemvalue="Mocha.test/integration/mongo/coffee+mongoose.test.js" />
+      <item itemvalue="Mocha.Coffee API Testing" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Mocha.Coffee  + Mongoose Testing" />
+        <item itemvalue="Mocha.Coffee API Testing" />
+        <item itemvalue="Mocha.test/integration/mongo/coffee+mongoose.test.js" />
+        <item itemvalue="Mocha.Trying different coffees" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -833,41 +1136,106 @@
       <workItem from="1525199567556" duration="946000" />
       <workItem from="1525200534472" duration="19833000" />
       <workItem from="1525566198520" duration="10269000" />
+      <workItem from="1525903936837" duration="1105000" />
+      <workItem from="1525909048986" duration="1222000" />
+      <workItem from="1525910300103" duration="1830000" />
+      <workItem from="1525912539035" duration="3776000" />
+      <workItem from="1525917299440" duration="20289000" />
+      <workItem from="1526229601488" duration="15852000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="Coffee__+_Mongoose_Testing - 2018.05.13 at 23h 04m 24s.xml">
+      <configuration name="Coffee  + Mongoose Testing" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="Coffee__+_Mongoose_Testing - 2018.05.13 at 23h 04m 49s.xml">
+      <configuration name="Coffee  + Mongoose Testing" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="Coffee__+_Mongoose_Testing - 2018.05.13 at 23h 05m 30s.xml">
+      <configuration name="Coffee  + Mongoose Testing" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="Coffee__+_Mongoose_Testing - 2018.05.13 at 23h 06m 50s.xml">
+      <configuration name="Coffee  + Mongoose Testing" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="Coffee__+_Mongoose_Testing - 2018.05.13 at 23h 11m 24s.xml">
+      <configuration name="Coffee  + Mongoose Testing" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="Coffee__+_Mongoose_Testing - 2018.05.13 at 23h 13m 50s.xml">
+      <configuration name="Coffee  + Mongoose Testing" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="Coffee__+_Mongoose_Testing - 2018.05.13 at 23h 14m 56s.xml">
+      <configuration name="Coffee  + Mongoose Testing" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="Coffee__+_Mongoose_Testing - 2018.05.13 at 23h 16m 47s.xml">
+      <configuration name="Coffee  + Mongoose Testing" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="Test - 2018.05.13 at 23h 17m 14s.xml">
+      <configuration name="Test" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="Test - 2018.05.13 at 23h 21m 06s.xml">
+      <configuration name="Test" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="133887000" />
+    <option name="totallyTimeSpent" value="186381000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
+    <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50533617" side_tool="true" weight="0.4978308" />
       <window_info anchor="right" id="Maven Projects" order="5" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49733192" weight="0.3270925" />
       <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49466383" visible="true" weight="0.5" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49733192" weight="0.3263506" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49466383" visible="true" weight="0.49283352" />
       <window_info anchor="bottom" id="TypeScript" order="12" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27724358" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14781217" />
+      <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" />
+      <window_info id="Learn" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39867842" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39801544" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.2497332" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="bottom" id="Messages" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="4" weight="0.3296582" />
-      <window_info id="Learn" order="2" />
+      <window_info anchor="bottom" id="Messages" order="0" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27724358" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TypeScript" order="12" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49733192" weight="0.3270925" />
+      <window_info id="Designer" order="3" />
+      <window_info anchor="bottom" id="Find" order="4" weight="0.3296582" />
+      <window_info id="Learn" order="2" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49466383" visible="true" weight="0.5" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50533617" side_tool="true" weight="0.4978308" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39867842" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Messages" order="0" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -883,54 +1251,17 @@
           <line>12</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/test/integration/mongo/coffee+mongoose.test.js</url>
+          <line>78</line>
+          <properties lambdaOrdinal="0" />
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="8" />
+      <option name="time" value="40" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/middleware/consumes.ts" />
-    <entry file="file://$PROJECT_DIR$/src/middleware/produces.ts" />
-    <entry file="file://$PROJECT_DIR$/src/api/coffee/index.js" />
-    <entry file="file://$PROJECT_DIR$/app.js" />
-    <entry file="file://$PROJECT_DIR$/server.js" />
-    <entry file="file://$PROJECT_DIR$/src/api/routes.api.js" />
-    <entry file="file://$PROJECT_DIR$/node_modules/@types/express/index.d.ts" />
-    <entry file="file://$PROJECT_DIR$/node_modules/@types/express-serve-static-core/index.d.ts" />
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="244" column="19" selection-start-line="244" selection-start-column="19" selection-end-line="244" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@types/node/index.d.ts" />
-    <entry file="file://$PROJECT_DIR$/node_modules/@types/lodash/lang/isNil.d.ts" />
-    <entry file="file://$PROJECT_DIR$/build/src/middleware/middlewares.js" />
-    <entry file="file://$PROJECT_DIR$/build/src/api/coffee/index.js" />
-    <entry file="file://$PROJECT_DIR$/build/src/api/coffee/index.d.ts" />
-    <entry file="file://$PROJECT_DIR$/node_modules/@types/koa/index.d.ts" />
-    <entry file="file://$PROJECT_DIR$/tsconfig.json" />
-    <entry file="file://$PROJECT_DIR$/node_modules/awilix/lib/resolvers.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="53" column="2" selection-start-line="53" selection-start-column="2" selection-end-line="53" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/awilix-koa/lib/invokers.d.ts" />
-    <entry file="file://$PROJECT_DIR$/node_modules/@types/koa-router/index.d.ts" />
-    <entry file="file://$PROJECT_DIR$/node_modules/@types/request/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-255" />
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-727">
@@ -945,13 +1276,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/awilix/lib/container.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="149" column="24" selection-start-line="149" selection-start-column="24" selection-end-line="149" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/@types/lodash/common/string.d.ts" />
     <entry file="file://$PROJECT_DIR$/src/model/coffee.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -961,13 +1285,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build/src/api/coffee.js" />
-    <entry file="file://$PROJECT_DIR$/src/dao/coffee.store.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.babelrc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -975,15 +1292,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/data.store.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@types/mongoose/index.d.ts" />
-    <entry file="file://$PROJECT_DIR$/node_modules/winston/lib/winston.js" />
     <entry file="file://$PROJECT_DIR$/node_modules/winston/lib/winston/transports/console.js" />
     <entry file="file://$PROJECT_DIR$/node_modules/winston/lib/winston/transports/index.js" />
     <entry file="file://$PROJECT_DIR$/bootstrap.js">
@@ -1000,13 +1308,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/api/routes.api.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/awilix-express/lib/scopePerRequest.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1014,95 +1315,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/service/coffee.service.js">
+    <entry file="file://$PROJECT_DIR$/config.json" />
+    <entry file="file://$PROJECT_DIR$/node_modules/mongoose/lib/connectionstate.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/api/coffee.api.js">
+    <entry file="file://$PROJECT_DIR$/node_modules/mongoose/lib/connection.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="4" column="45" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
+        <state relative-caret-position="952">
+          <caret line="56" column="19" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/unit/model/coffee.test.js">
+    <entry file="file://$PROJECT_DIR$/test/integration/mongo/create_test_db.sh" />
+    <entry file="file://$PROJECT_DIR$/test/integration/mongo/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="54" selection-start-line="2" selection-start-column="54" selection-end-line="2" selection-end-column="54" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/support/log/log.util.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="41" selection-start-column="41" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/unit/api/container.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#69#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/unit/mocks/mock-coffee.store.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#0#54#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/unit/api/coffee.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="44" column="46" selection-start-line="44" selection-start-column="46" selection-end-line="44" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/support/middleware/logger.middleware.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#46#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/support/middleware/utils.middleware.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.json">
+    <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="65" selection-start-line="2" selection-start-column="65" selection-end-line="2" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="17">
+          <caret line="29" column="39" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -1113,12 +1359,239 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
+    <entry file="file://$PROJECT_DIR$/src/service/coffee.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@types/request/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="113" column="4" selection-start-line="113" selection-start-column="4" selection-end-line="113" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/storage/mongo.storage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/storage/storage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/storage/data/coffee.storage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="37" column="31" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
+          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/storage/data/data.storage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@types/node/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="2260" column="21" selection-start-line="2260" selection-start-column="21" selection-end-line="2260" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/shared/container.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unit/mocks/mock-coffee.store.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/winston/lib/winston/config/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/winston/lib/winston/create-logger.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/winston/lib/winston/logger.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="80" selection-start-line="80" selection-end-line="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/winston/lib/winston.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="34" column="25" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/logform/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/logform/label.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/awilix/lib/awilix.module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="900" selection-start-line="900" selection-end-line="900" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/awilix/lib/awilix.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/api/coffee.api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/winston/lib/winston/container.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-340">
+          <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/awilix/lib/container.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-425">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/awilix/lib/awilix.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="25" lean-forward="true" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/api/routes.api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/support/middleware/logger.middleware.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="57" selection-start-line="6" selection-start-column="57" selection-end-line="6" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unit/api/coffee.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/support/log/log.util.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/axios/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="50" column="17" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/shared/mongo-environment.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@types/mongoose/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="218" column="47" selection-start-line="218" selection-start-column="47" selection-end-line="218" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@types/koa/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="432" selection-start-line="432" selection-end-line="432" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unit/model/coffee.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/integration/mongo/coffee+mongoose.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="78" column="56" selection-start-line="78" selection-start-column="56" selection-end-line="78" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#66#0" expanded="true" />
           </folding>
         </state>
       </provider>

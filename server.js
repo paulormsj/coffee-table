@@ -5,6 +5,7 @@ import {loggerBuilder} from './src/support/log/log.util';
 
 const mongoose = require('mongoose');
 
+//5ZrcRV65gtMhIVRD
 
 const production = process.env.NODE_ENV === 'production';
 
@@ -36,13 +37,15 @@ appContainer.loadModules([
 });
 
 appContainer.register('appConfig', asValue(configuration));
-appContainer.register('appContainer', asValue(appContainer));
 appContainer.register('logger',
    asValue(logger));
 
 mongoose.connect(configuration.mongo.uri, configuration.mongo.opts)
         .then(() => logger.info('connected to database'))
-        .catch(err => logger.error(err));
+        .catch(err => {
+           logger.error(err);
+           throw err;
+        });
 
 
 const preRouteMiddlewares = [

@@ -5,9 +5,10 @@ export function log({tag}) {
    return async (ctx, next) => {
       const configuration = ctx.state.container.resolve('appConfig');
       ctx.state.container.register('logger', asValue(loggerBuilder({
-         level: configuration.log.level, inProduction: configuration.production, tag
+         level: configuration.log.level, inProduction: configuration.production, tag: tag
       })));
       await next();
+      
    };
 }
 
